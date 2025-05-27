@@ -32,5 +32,9 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+## Run
+```
 python3 backfire-exploit.py -t https://127.0.0.1:8443 -i 127.0.0.1 -p 40056
+```
 
