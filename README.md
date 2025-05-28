@@ -37,4 +37,6 @@ Run:
 ```
 python3 backfire-exploit.py -t https://backfire.htb:8443 -i 127.0.0.1 -p 40056
 ```
-
+## Disclaimer
+I'm not sure where this intial idea for the script came from and various online 
+resources were used to create it. I do not take full credit for the script.
